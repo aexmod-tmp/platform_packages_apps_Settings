@@ -17,6 +17,7 @@
 
 package com.android.settings.applications;
 
+import android.app.Activity;
 import android.app.AppOpsManager;
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
@@ -24,6 +25,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources;
+import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -445,20 +447,27 @@ public class AppOpsState {
         }
 
         private CharSequence getCombinedText(ArrayList<AppOpsManager.OpEntry> ops,
-                CharSequence[] items) {
-            if (ops.size() == 1) {
-                return items[ops.get(0).getOp()];
-            } else {
-                StringBuilder builder = new StringBuilder();
-                for (int i=0; i<ops.size(); i++) {
-                    if (i > 0) {
-                        builder.append(", ");
-                    }
-                    builder.append(items[ops.get(i).getOp()]);
+                CharSequence[] items, Resources res, boolean withTerseCounts) {
+            StringBuilder builder = new StringBuilder();
+            for (int i=0; i<ops.size(); i++) {
+                if (i > 0) {
+                    builder.append(", ");
                 }
-                return builder.toString();
+                AppOpsManager.OpEntry op = ops.get(i);
+                int count = op.getAllowedCount() + op.getIgnoredCount();
+
+                if (withTerseCounts && count > 0) {
+                    String quantity = res.getQuantityString(R.plurals.app_ops_count,
+                            count, count);
+                    builder.append(res.getString(R.string.app_ops_entry_summary,
+                            items[op.getOp()], quantity));
+                } else {
+                    builder.append(items[op.getOp()]);
+                }
             }
+            return builder.toString();
         }
+
 
 	public CharSequence getCountsText(Resources res) {
             AppOpsManager.OpEntry op = mOps.get(0);
@@ -483,14 +492,15 @@ public class AppOpsState {
         }
 
         public CharSequence getSummaryText(AppOpsState state) {
-            return getCombinedText(mOps, state.mOpSummaries);
+            return getCombinedText(mOps, state.mOpSummaries, state.mContext.getResources(), true);
         }
 
         public CharSequence getSwitchText(AppOpsState state) {
+            final Resources res = state.mContext.getResources();
             if (mSwitchOps.size() > 0) {
-                return getCombinedText(mSwitchOps, state.mOpLabels);
+                return getCombinedText(mSwitchOps, state.mOpLabels, res, false);
             } else {
-                return getCombinedText(mOps, state.mOpLabels);
+                return getCombinedText(mOps, state.mOpLabels, res, false);
             }
         }
 
@@ -618,16 +628,6 @@ public class AppOpsState {
 
         AppEntry appEntry = appEntries.get(packageName);
         if (appEntry == null) {
-            if (appInfo == null) {
-                try {
-                    appInfo = mPm.getApplicationInfo(packageName,
-                            PackageManager.MATCH_DISABLED_COMPONENTS
-                            | PackageManager.MATCH_ANY_USER);
-                } catch (PackageManager.NameNotFoundException e) {
-                    Log.w(TAG, "Unable to find info for package " + packageName);
-                    return null;
-                }
-            }
             appEntry = new AppEntry(this, appInfo);
             appEntry.loadLabel(context);
             appEntries.put(packageName, appEntry);
@@ -701,6 +701,9 @@ public class AppOpsState {
             }
         }
 
+        // Whether to apply hide user / system app filters
+        final boolean applyFilters = (packageName == null);
+
         List<AppOpsManager.PackageOps> pkgs;
         if (packageName != null) {
             pkgs = mAppOps.getOpsForPackage(uid, packageName, tpl.ops);
@@ -711,7 +714,8 @@ public class AppOpsState {
         if (pkgs != null) {
             for (int i=0; i<pkgs.size(); i++) {
                 AppOpsManager.PackageOps pkgOps = pkgs.get(i);
-                AppEntry appEntry = getAppEntry(context, appEntries, pkgOps.getPackageName(), null);
+                AppEntry appEntry = getAppEntry(context, appEntries, pkgOps.getPackageName(), null,
+                        applyFilters);
                 if (appEntry == null) {
                     continue;
                 }
@@ -747,7 +751,7 @@ public class AppOpsState {
         for (int i=0; i<apps.size(); i++) {
             PackageInfo appInfo = apps.get(i);
             AppEntry appEntry = getAppEntry(context, appEntries, appInfo.packageName,
-                    appInfo.applicationInfo);
+                    appInfo.applicationInfo, applyFilters);
             if (appEntry == null) {
                 continue;
             }
@@ -781,7 +785,7 @@ public class AppOpsState {
 
                         }
                         AppOpsManager.OpEntry opEntry = new AppOpsManager.OpEntry(
-                                permOps.get(k), AppOpsManager.MODE_ALLOWED, 0, 0, 0, -1, null);
+                                permOps.get(k), AppOpsManager.MODE_ALLOWED, 0, 0, 0, -1, null, 0, 0);
                         dummyOps.add(opEntry);
                         addOp(entries, pkgOps, appEntry, opEntry, packageName == null,
                                 packageName == null ? 0 : opToOrder[opEntry.getOp()]);

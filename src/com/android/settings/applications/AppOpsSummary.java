@@ -107,12 +107,24 @@ public class AppOpsSummary extends InstrumentedPreferenceFragment {
             mCurPos = position;
         }
 
+        public int getCurrentPage() {
+            return mCurPos;
+        }
+
         @Override
         public void onPageScrollStateChanged(int state) {
             if (state == ViewPager.SCROLL_STATE_IDLE) {
                 //updateCurrentTab(mCurPos);
             }
         }
+    }
+
+    private void resetAdapter() {
+        // trigger adapter load, preserving the selected page
+        int curPos = mAdapter.getCurrentPage();
+        mViewPager.setAdapter(mAdapter);
+        mViewPager.setOnPageChangeListener(mAdapter);
+        mViewPager.setCurrentItem(curPos);
     }
 
     @Override
@@ -160,6 +172,8 @@ public class AppOpsSummary extends InstrumentedPreferenceFragment {
         if (container instanceof PreferenceFrameLayout) {
             ((PreferenceFrameLayout.LayoutParams) rootView.getLayoutParams()).removeBorders = true;
         }
+
+        mActivity = getActivity();
 
         return rootView;
     }
