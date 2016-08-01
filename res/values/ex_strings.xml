@@ -300,4 +300,7 @@
     <string name="clang_version">Clang</string>
     <string name="clang_version_default">Unknown</string>
 
+    <!-- Phone info shortcut -->
+    <string name="device_info_title">Phone info</string>
+
 </resources>
