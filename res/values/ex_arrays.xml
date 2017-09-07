@@ -13,6 +13,21 @@
  -->
 <resources>
 
+    <!-- Night mode tile brightness value  -->
+    <string-array name="night_brightness_value_entries" translatable="false">
+        <item>@string/night_bright_disabled</item>
+        <item>@string/night_bright_minimum</item>
+        <item>@string/night_bright_low</item>
+        <item>@string/night_bright_medium</item>
+    </string-array>
+
+    <string-array name="night_brightness_value_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
     <!-- Names of categories of app ops tabs -->
     <string-array name="app_ops_categories_aosp" translatable="false">
         <item>@string/app_ops_cat_location</item>
