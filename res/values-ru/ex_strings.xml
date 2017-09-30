@@ -513,4 +513,7 @@
     <string name="sp_profile_entries_no_override">Оставить без изменения</string>
     <string name="profile_select">Выбор профиля</string>
 
+    <!-- Battery saver color -->
+    <string name="battery_saver_color_title">Цветовое оповещение</string>
+    <string name="battery_saver_color_summary">Окрашивать статусбар и панель навигации в оранжевый, когда включён режим энергосбережения</string>
 </resources>
