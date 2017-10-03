@@ -61,7 +61,11 @@
             android:entries="@array/alert_on_charged_entries"
             android:entryValues="@array/alert_on_charged_level_values" />
 
-        <!-- Cross-listed item, if you change this, also change it in ia_display_settings.xml -->
+        <SwitchPreference
+            android:key="battery_image"
+            android:title="@string/battery_image"
+            android:summary="@string/battery_image_description"/>
+
         <SwitchPreference
             android:key="auto_brightness_battery"
             android:title="@string/auto_brightness_title"
