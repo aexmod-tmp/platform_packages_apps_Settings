@@ -145,4 +145,9 @@
     <string name="value_equals_default">умолч.</string>
     <string name="show_light_on_zen_title">Включить светодиод в режиме «Не беспокоить»</string>
 
+    <!-- Alert on optimal charge -->
+    <string name="alert_on_charged_level_title">Предупреждение об уровне заряда</string>
+    <string name="alert_on_charged_level_summary">Уведомлять звуком/вибрацией при оптимальном уровне заряда, если экран выключен по крайней мере 1 мин.\nУведомление может быть отключено, долгим нажатием на него</string>
+    <string name="alert_on_charged_level_dis">Отключено</string>
+
 </resources>
