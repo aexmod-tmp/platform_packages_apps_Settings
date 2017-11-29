@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2017 AospExtended ROM Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About phone screen, Extended version -->
+    <string name="extended_version">Версия Extended</string>
+    <string name="extended_version_default">Неизвестно</string>
+
+    <!-- About phone screen, build date -->
+    <string name="build_date">Дата сборки</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+
+    <!-- Development Settings -->
+    <!-- Dev Options Enabled by Default -->
+    <string name="show_dev_already_enabled">Не нужно, настройки разработчика активированный по умолчанию</string>
+
+    <!-- Changelog -->
+    <string name="changelog_title">Список изменений</string>
+    <string name="changelog_summary">Последние изменения</string>
+    <string name="changelog_loading">Загрузка списка изменений\u2026</string>
+    <string name="changelog_error">Невозможно загрузить список изменений</string>
+
+    <!-- About AospExtended -->
+    <string name="aex_about_info">О нас</string>
+    <string name="aex_about_summary">Наше введение и команда</string>
+    <string name="aex_about_info_summary">AospExtended mod- это прошивка на базе AOSP которая использует стандартный интерфейс и настройки, с множеством дополнительных параметров и темами Substratum. Проект был создан после сбора различных коммитов из других проектов. База AOSP, с нашими изменениями даёт плавность и интерфейс без глюков из коробки. Мы будем постоянно пытаться добавить дополнительные функции и сделать их еще лучше в будущих обновлениях.&#35;BeExtended</string>
+    <string name="dev_info">О AospExtended</string>
+    <string name="github">Github</string>
+    <string name="github_description">Посмотрите наш исходный код</string>
+    <string name="gplus">Google+</string>
+    <string name="gplus_description">Вступите в наше G+ сообщество</string>
+    <string name="telegram">Telegram</string>
+    <string name="telegram_description">Подпишитесь на наш канал в Telegram</string>
+    <string name="web">Центр Загрузок</string>
+    <string name="web_description">Переводы</string>
+    <string name="help_translate_description">Посетите наш Crowdin для перевода на ваш язык</string>
+    <string name="walls">Обои</string>
+    <string name="walls_description">Загрузить обои от разных пользователей</string>
+    <string name="leads">Основные разработчики</string>
+    <string name="team_1">Shubham Singh &#40;ishubhamsingh&#41;</string>
+    <string name="team1_description">Создатель/Главный разработчик</string>
+    <string name="team_2">Aman Kumar &#40;FireLord&#41;</string>
+    <string name="team2_description">Разработчик</string>
+    <string name="team_3">Amol Amrit</string>
+    <string name="team3_description">Модератор и разработчик-любитель</string>
+    <string name="team_4">Henrique Silva &#40;jhenrique09&#41;</string>
+    <string name="team4_description">Разработчик</string>
+    <string name="designers">Designers</string>
+    <string name="designer_1">Yasan &#40;AlienCreature7&#41;</string>
+    <string name="designer1_description">Баннеры в темах, логотипы, обои</string>
+    <string name="designer_2">Savio &#40;Wizper99&#41;</string>
+    <string name="designer2_description">QS/Fling logos</string>
+    <string name="designer_3">Jesus R &#40;KrapK&#41;</string>
+    <string name="designer3_description">Бутанамиция и обои</string>
+    <string name="maintainers">Мейнтейнеры</string>
+    <string name="maintainer_description">Разработчик для %1$s</string>
+
+    <!-- AEX OTA -->
+    <string name="aex_ota_title">Обновления AEX</string>
+    <string name="aex_ota_summary">Получить последнюю сборку</string>
+
+    <!-- Expanded desktop -->
+    <string name="power_menu_expanded_desktop">Расширенный экрын</string>
+    <string name="expanded_hide_nothing">Ничего не скрывать</string>
+    <string name="expanded_hide_status">Скрыть строку сосотояния</string>
+    <string name="expanded_hide_navigation">Скрыть панель навигации</string>
+    <string name="expanded_hide_both">Скрывать строку состояния и панель навигации</string>
+    <string name="expanded_nothing_to_show">Для настройки параметров расширенного экрана для отдельных приложений отключите параметр «Включить для всех»</string>
+  <string name="expanded_desktop_state">Расширенный экран</string>
+  <string name="expanded_enabled_for_all">Включить для всех</string>
+  <string name="expanded_user_configurable">Настраивается пользователем</string>
+  <string name="expanded_desktop_style">Стиль расширенного рабочего стола</string>
+  <string name="expanded_desktop_style_description">Выбрать стиль расширенного рабочего стола по умолчанию</string>
+  <string name="expanded_desktop_title">Настройки расширенного рабочего стола</string>
+
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
+
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Звук скриншота</string>
+    <string name="screenshot_sound_summary">Воспроизводит звуковой эффект при снятии скриншота</string>
+
+    <!-- Advanced night mode brightness -->
+  <string name="night_brightness_category">Яркость</string>
+  <string name="night_brightness_value_title">Яркость в ночном режиме</string>
+ <!-- <string name="night_brightness_text">При включении ночного режима изменяется яркость экрана. По умолчанию яркость - низкая</string> -->
+  <string name="night_bright_disabled">Отключено</string>
+  <string name="night_bright_min">Минимальная яркость</string>
+  <string name="night_bright_low">Низкая яркость</string>
+  <string name="night_bright_medium">Средняя яркость</string>
+
+    <!-- Doze -->
+    <string name="doze_always_on_title">Держать экран блокировки всегда вкл.</string>
+    <string name="doze_always_on_summary">Показывать время, значки уведомлений и другую информацию (батарея разряжается быстрее)</string>
+
+    <!-- Notification volume -->
+ <string name="link_volume_option_title">Связать громкости звонка и уведом.</string>
+  <string name="notification_volume_option_title">Громкость уведомлений</string>
+  <string name="ring_notification_volume_option_title">Громкость звонка и уведомлений</string>
+
+    <!-- App Ops Settings -->
+    <!-- App Ops Categories -->
+  <string name="app_ops_cat_location">Местоположение</string>
+  <string name="app_ops_cat_personal">Личные данные</string>
+  <string name="app_ops_cat_messaging">SMS/MMS</string>
+  <string name="app_ops_cat_media">Мультимедиа</string>
+  <string name="app_ops_cat_device">Устройство</string>
+  <string name="app_ops_cat_bootup">АвтоЗагрузка</string>
+
+    <!-- [CHAR LIMIT=NONE] App ops labels -->
+   <string name="app_ops_access_camera">камера</string>
+
+  <string name="app_ops_access_coarse_location">по координатам сети</string>
+  <string name="app_ops_access_fine_location">по всем источникам</string>
+  <string name="app_ops_access_gps_location">по GPS</string>
+  <string name="app_ops_access_notifications">уведомления</string>
+  <string name="app_ops_activate_vpn">VPN</string>
+  <string name="app_ops_auto_start">автозапуск</string>
+  <string name="app_ops_delete_call_log">удаление журнала вызовов</string>
+  <string name="app_ops_delete_contacts">удаление контактов</string>
+  <string name="app_ops_delete_mms">удаление MMS</string>
+  <string name="app_ops_delete_sms">удаление SMS</string>
+  <string name="app_ops_draw_on_top">отображение поверх других элементов</string>
+  <string name="app_ops_get_usage_stats">получение статистики использования</string>
+  <string name="app_ops_keep_device_awake">активный режим</string>
+  <string name="app_ops_make_phone_call">осуществление вызова</string>
+  <string name="app_ops_modify_calendar">изменение данных календаря</string>
+  <string name="app_ops_modify_call_log">изменение журнала звонков</string>
+  <string name="app_ops_modify_clipboard">изменение буфера обмена</string>
+  <string name="app_ops_modify_contacts">изменить данные контактов</string>
+  <string name="app_ops_modify_settings">изменение настроек</string>
+  <string name="app_ops_mute_unmute_microphone">включение/выключение микрофона</string>
+  <string name="app_ops_play_audio">воспроизведение аудио</string>
+  <string name="app_ops_post_notification">выведение уведомлений</string>
+  <string name="app_ops_project_media">трансляция контента</string>
+  <string name="app_ops_read_calendar">чтение данных календаря</string>
+  <string name="app_ops_read_call_log">просмотр журнала вызовов</string>
+  <string name="app_ops_read_clipboard">чтение буфера обмена</string>
+  <string name="app_ops_read_contacts">чтение контактов</string>
+  <string name="app_ops_read_mms">чтение MMS</string>
+  <string name="app_ops_read_sms">чтение SMS</string>
+  <string name="app_ops_receive_sms">получение SMS</string>
+  <string name="app_ops_record_audio">запись аудио</string>
+  <string name="app_ops_send_mms">отправка MMS</string>
+  <string name="app_ops_send_sms">отправка SMS</string>
+  <string name="app_ops_toast_window">тост-уведомления</string>
+  <string name="app_ops_use_alarm_volume">громкость будильника</string>
+  <string name="app_ops_use_audio_focus">аудиофокус</string>
+  <string name="app_ops_use_bluetooth_volume">громкость Bluetooth-устройств</string>
+  <string name="app_ops_use_master_volume">общая громкость</string>
+  <string name="app_ops_use_media_buttons">кнопки мультимедиа</string>
+  <string name="app_ops_use_media_volume">громкость мультимедиа</string>
+  <string name="app_ops_use_notification_volume">громкость уведомлений</string>
+  <string name="app_ops_use_ring_volume">громкость звонка</string>
+  <string name="app_ops_use_vibrate">виброотклик</string>
+  <string name="app_ops_use_voice_volume">громкость при разговоре</string>
+  <string name="app_ops_write_mms">создание MMS</string>
+  <string name="app_ops_write_sms">создание SMS</string>
+  <string name="app_ops_use_fingerprint">отпечатки</string>
+  <string name="app_ops_add_voicemail">голосовая почта</string>
+  <string name="app_ops_read_phone_state">состояние телефона</string>
+  <string name="app_ops_scan_wifi">сканирование WiFi сетей</string>
+  <string name="app_ops_change_wallpaper">изменение обоев</string>
+  <string name="app_ops_assist_structure">использование структуры ассистента</string>
+  <string name="app_ops_assist_screenshot">скриншот</string>
+  <string name="app_ops_use_body_sensors">использование датчиков тела</string>
+  <string name="app_ops_read_cell_broadcasts">оповещение населения</string>
+  <string name="app_ops_mock_location">фиктивное местоположение</string>
+  <string name="app_ops_read_external_storage">чтение с внеш. носителя</string>
+  <string name="app_ops_write_external_storage">запись на внеш. носитель</string>
+  <string name="app_ops_turn_on_screen">включение экрана</string>
+  <string name="app_ops_get_accounts">информация об аккаунтах</string>
+  <string name="app_ops_wifi_change">изменение статуса WiFi</string>
+  <string name="app_ops_toggle_bluetooth">переключение Bluetooth</string>
+  <string name="app_ops_run_in_background">запуск в фоновом режиме</string>
+  <string name="app_ops_boot_completed">автозапуск</string>
+  <string name="ambient_display_show_battery_title">Состояние батареи</string>
+  <string name="ambient_display_show_battery_summary">Показывать значок батареи во время пульсации</string>
+
+   <!-- Root Management -->
+  <string name="rootmanagement_title">Управление правами суперпользователя</string>
+  <string name="rootmanagement_dashboard_summary">Управление правами суперпользователя</string>
+
+    <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
+    <string name="supersu_title">SuperSU</string>
+
+    <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+    <string name="local_backup_password_title">Пароль для резервного копирования</string>
+
+    <!-- Battery saver color -->
+    <string name="battery_saver_color_title">Цветовое оповещение</string>
+  <string name="battery_saver_color_summary">Окрасить строку состояния и панель навигации в оранжевый цвет, когда активирован режим энергосбережения</string>
+
+    <!-- Wakeup options -->
+    <string name="wakeup_when_plugged_unplugged_title">Просыпаться при зарядке</string>
+    <string name="wakeup_when_plugged_unplugged_summary">Просыпаться при подключении/отключении зарядки</string>
+
+    <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">Показать иоформацию о CPU</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">Накладываемый слой, показывающий текущую информацию о процессоре</string>
+
+  <string name="dashboard_conditions_title">Уведомления</string>
+  <string name="summary_dashboard_conditions_enabled">Уведомления в меню настроек включены</string>
+  <string name="summary_dashboard_conditions_disabled">Уведомления в меню настроек выключены</string>
+
+   <string name="dashboard_suggestions_title">Подсказки</string>
+  <string name="summary_dashboard_suggestions_enabled">Подсказки в главном меню включены</string>
+  <string name="summary_dashboard_suggestions_disabled">Подсказки в главном меню выключены</string>
+
+    <!-- Custom light color -->
+    <string name="light_customization">Настройка светодиода уведомлений</string>
+    <string name="custom_light_title">Цвет светодиода</string>
+    <string name="custom_light_on_time_title">"Время включения светодиода (ms)"</string>
+    <string name="custom_light_off_time_title">"Время выключения светодиода (ms)"</string>
+    <string name="app_notifications_info_desc">Нажмите один из вышеуказанных каналов, чтобы настроить их цвета и другие параметры.</string>
+    <string name="value_equals_default">Def</string>
+    <string name="show_light_on_zen_title">Мигать когда актвен режим Не беспокоить</string>
+
+    <!-- Volume settings - Volume adjustment sound -->
+    <string name="volume_adjust_sounds_title">Звук при регулировке громкости</string>
+
+    <!-- Reset battery stats -->
+    <string name="ok">Ok</string>
+    <string name="menu_stats_reset">Сбросить статистику</string>
+    <string name="reset_stats_msg">стория использования батареи будет сброшена</string>
+
+ <string name="volume_steps_title">Уровни громкости</string>
+  <string name="volume_steps_alarm_title">Уровни громкости: Будильник</string>
+  <string name="volume_steps_dtmf_title">Уровень громкости: Набор номера</string>
+  <string name="volume_steps_music_title">Уровень громкости: Музыка</string>
+  <string name="volume_steps_notification_title">Уровень громкости: Уведомления</string>
+  <string name="volume_steps_ring_title">Уровень громкости: Звонок</string>
+  <string name="volume_steps_system_title">Уровень громкости: Система</string>
+  <string name="volume_steps_voice_call_title">Уровень громкости: Голосовой вызов</string>
+  <string name="volume_steps_reset">Сброс</string>
+    <string name="volume_steps_60">60</string>
+    <string name="volume_steps_45">45</string>
+    <string name="volume_steps_30">30</string>
+    <string name="volume_steps_15">15</string>
+    <string name="volume_steps_7">7</string>
+    <string name="volume_steps_5">5</string>
+
+    <!-- Encryption and credential -->
+    <string name="custom_encryption_and_credential_settings_summary_on">Устройство зашифровано</string>
+    <string name="custom_encryption_and_credential_settings_summary_off">Устройство расшифровано</string>
+
+    <!-- Android debugging over WiFi -->
+    <string name="adb_over_network">ADB over network</string>
+    <string name="adb_over_network_summary">Enable TCP/IP debugging over network interfaces (Wi-Fi, USB networks). This setting is reset on reboot</string>
+    <!-- Warning for Adb over Network -->
+    <string name="adb_over_network_warning">WARNING: When ADB over network is enabled, your phone is open for intrusions on all connected networks, including GSM data network!\n\nOnly use this feature when you are connected on trusted networks.\n\nDo you really want to enable this function?</string>
+
+    <!-- Increasing ring tone volume -->
+    <string name="increasing_ring_volume_option_title">Нарастающая громкость звонка</string>
+    <string name="increasing_ring_min_volume_title">Начальная громкость</string>
+    <string name="increasing_ring_ramp_up_time_title">Время нарастания</string>
+
+</resources>
