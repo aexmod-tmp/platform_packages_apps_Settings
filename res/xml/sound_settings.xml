@@ -39,7 +39,7 @@
                 android:title="@string/ring_notification_volume_option_title" />
 
         <!-- Increasing ring -->
-	<org.aospextended.extensions.preference.SystemSettingSwitchPreference
+        <com.android.settings.preference.SystemSettingSwitchPreference
                 android:key="increasing_ring"
                 android:title="@string/increasing_ring_volume_option_title" />
 
