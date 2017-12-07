@@ -70,7 +70,7 @@
     <string name="aex_ota_summary">Получить последнюю сборку</string>
 
     <!-- Expanded desktop -->
-    <string name="power_menu_expanded_desktop">Расширенный экрын</string>
+    <string name="power_menu_expanded_desktop">Расширенный экран</string>
     <string name="expanded_hide_nothing">Ничего не скрывать</string>
     <string name="expanded_hide_status">Скрыть строку сосотояния</string>
     <string name="expanded_hide_navigation">Скрыть панель навигации</string>
