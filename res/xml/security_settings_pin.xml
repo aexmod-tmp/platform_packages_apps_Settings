@@ -29,13 +29,13 @@
             settings:keywords="@string/keywords_lockscreen" />
 
 
-        <org.aospextended.extensions.preferences.SystemSettingSwitchPreference
+        <org.aospextended.extensions.preference.SystemSettingSwitchPreference
             android:key="lockscreen_scramble_pin_layout"
             android:title="@string/unlock_scramble_pin_layout_title"
             android:summary="@string/unlock_scramble_pin_layout_summary" 
             android:defaultValue="false" />
 
-        <org.aospextended.extensions.preferences.SystemSettingSwitchPreference
+        <org.aospextended.extensions.preference.SystemSettingSwitchPreference
             android:key="lockscreen_quick_unlock_control"
             android:title="@string/unlock_quick_unlock_control_title"
             android:summary="@string/unlock_quick_unlock_control_summary" 
