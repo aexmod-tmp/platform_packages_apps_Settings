@@ -259,7 +259,7 @@ public class SettingsGateway {
             WebViewAppPicker.class.getName(),
             LockscreenDashboardFragment.class.getName(),
             BluetoothDeviceDetailsFragment.class.getName(),
-            DataUsageList.class.getName()
+            DataUsageList.class.getName(),
             PartsFragment.class.getName(),
             HeadsUpSettings.class.getName(),
             NavbarSettings.class.getName(),
