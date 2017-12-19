@@ -21,6 +21,14 @@
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Звук при снятии скриншота</string>
 
+    <!-- App Ops Categories -->
+    <string name="app_ops_cat_location">Местоположение</string>
+    <string name="app_ops_cat_personal">Личные данные</string>
+    <string name="app_ops_cat_messaging">SMS/MMS</string>
+    <string name="app_ops_cat_media">Мультимедиа</string>
+    <string name="app_ops_cat_device">Устройство</string>
+    <string name="app_ops_cat_bootup">Автозагрузка</string>
+
     <!-- App ops requests -->
     <string name="app_ops_access_camera">камера</string>
     <string name="app_ops_access_location">местоположение</string>
@@ -108,5 +116,13 @@
     <string name="increasing_ring_volume_option_title">Возрастающая громкость звонка</string>
     <string name="increasing_ring_min_volume_title">Начальная громкость</string>
     <string name="increasing_ring_ramp_up_time_title">Время увеличения</string>
+
+    <!-- Advanced night mode brightness -->
+    <string name="night_brightness_category">Яркость</string>
+    <string name="night_brightness_value_title">Яркость в ночном режиме</string>
+    <string name="night_bright_disabled">Отключено</string>
+    <string name="night_bright_min">Минимальная яркость</string>
+    <string name="night_bright_low">Низкая яркость</string>
+    <string name="night_bright_medium">Средняя яркость</string>
 
 </resources>

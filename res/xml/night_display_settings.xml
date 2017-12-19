@@ -39,8 +39,6 @@
             android:key="night_display_temperature"
             android:title="@string/night_display_temperature_title"/>
 
-    </PreferenceCategory>
-
     <PreferenceCategory
             android:title="@string/night_brightness_category">
 
