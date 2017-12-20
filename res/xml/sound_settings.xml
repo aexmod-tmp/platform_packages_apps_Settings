@@ -167,6 +167,12 @@
           android:key="screenshot_sounds"
           android:title="@string/screenshot_sound_title" />
 
+	 <!-- Vibrate on plug -->
+        <org.aospextended.extensions.preference.SystemSettingSwitchPreference
+          android:key="vibration_on_charge_state_changed"
+          android:title="@string/vibration_on_charge_state_changed_title"
+          android:defaultValue="true" />
+
         <!-- Emergency tone -->
         <DropDownPreference
           android:key="emergency_tone"

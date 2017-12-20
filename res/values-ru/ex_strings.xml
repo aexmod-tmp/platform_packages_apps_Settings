@@ -150,4 +150,7 @@
     <string name="alert_on_charged_level_summary">Уведомлять звуком/вибрацией при оптимальном уровне заряда, если экран выключен по крайней мере 1 мин.\nУведомление может быть отключено, долгим нажатием на него</string>
     <string name="alert_on_charged_level_dis">Отключено</string>
 
+    <!-- Vibrate on plug -->
+    <string name="vibration_on_charge_state_changed_title">Вибрация при подключении</string>
+
 </resources>
