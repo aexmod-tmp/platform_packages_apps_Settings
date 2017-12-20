@@ -132,9 +132,10 @@
     <string name="night_brightness_category">Яркость</string>
     <string name="night_brightness_value_title">Яркость в ночном режиме</string>
     <string name="night_bright_disabled">Отключено</string>
-    <string name="night_bright_min">Минимальная яркость</string>
+    <string name="night_bright_minimum">Минимальная яркость</string>
     <string name="night_bright_low">Низкая яркость</string>
     <string name="night_bright_medium">Средняя яркость</string>
+
 
     <!-- Custom light color -->
     <string name="light_customization">Индикатор уведомлений</string>
