@@ -3291,6 +3291,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name="org.aospextended.extensions.HAFRAppListActivity" />
+
         <activity android:name=".Settings$ExtensionsSettingsActivity"
                   android:label="@string/extensions_title"
                   android:icon="@drawable/ic_settings_extensions">
@@ -3304,6 +3306,7 @@
             <meta-data android:name="com.android.settings.summary"
                        android:resource="@string/build_tweaks_summary_title"/>
         </activity>
+
 
 
         <!-- Heads up settings activity. -->
