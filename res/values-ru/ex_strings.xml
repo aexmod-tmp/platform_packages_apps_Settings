@@ -170,4 +170,7 @@
 
     <string name="battery_image">Иконка батареи</string>
     <string name="battery_image_description">Показывать иконку батареи в строке состояния</string>
+
+    <string name="background_processes_settings_title">Запущенные процессы</string>
+
 </resources>

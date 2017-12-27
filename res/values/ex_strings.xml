@@ -271,4 +271,7 @@
 
     <string name="battery_image">Battery image</string>
     <string name="battery_image_description">Show battery image in status bar</string>
+
+    <string name="background_processes_settings_title">Background processes</string>
+
 </resources>
