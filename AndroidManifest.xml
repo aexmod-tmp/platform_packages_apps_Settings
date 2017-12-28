@@ -3310,9 +3310,6 @@
                        android:resource="@string/build_tweaks_summary_title"/>
         </activity>
 
-<<<<<<< HEAD
-
-
         <!-- Heads up settings activity. -->
         <activity android:name="Settings$HeadsUpSettingsActivity"
                 android:label="@string/heads_up_notifications"
