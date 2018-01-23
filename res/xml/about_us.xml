@@ -32,7 +32,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     android:icon="@drawable/ic_github" >
     <intent
                android:action="android.intent.action.VIEW"
-               android:data="http://github.com/AospExtended" />
+               android:data="http://github.com/AEXmod" />
         </Preference>
 
         <Preference
@@ -50,7 +50,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     android:icon="@drawable/ic_telegram" >
     <intent
                android:action="android.intent.action.VIEW"
-               android:data="http://telegram.me/aospextended" />
+               android:data="http://telegram.me/aex_mod" />
         </Preference>
 
         <Preference
@@ -59,7 +59,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     android:icon="@drawable/ic_web" >
     <intent
                android:action="android.intent.action.VIEW"
-               android:data="http://downloads.aospextended.com/" />
+               android:data="https://androidfilehost.com/?w=files&amp;flid=233861" />
         </Preference>
 
         <Preference
@@ -85,6 +85,15 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 <PreferenceCategory
               android:key="leads"
               android:title="@string/leads" >
+
+        <PreferenceScreen
+            android:title="@string/team_0"
+    android:summary="@string/team0_description"
+    android:icon="@drawable/ic_devs" >
+    <intent
+               android:action="android.intent.action.VIEW"
+               android:data="http://4pda.ru/forum/index.php?showuser=751846" />
+        </PreferenceScreen>
 
         <Preference
             android:title="@string/team_1"
