@@ -109,7 +109,7 @@
     <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">增加闹铃音量</string>
     <string name="increasing_ring_min_volume_title">开始音量</string>
-    <string name="increasing_ring_ramp_up_time_title">增加次数</string>
+    <string name="increasing_ring_ramp_up_time_title">增加时间</string>
 
     <!-- App Ops Settings -->
     <!-- App Ops Categories -->
@@ -263,7 +263,7 @@
     <string name="custom_encryption_and_credential_settings_summary_off">设备未加密</string>
 
     <!-- Android debugging over WiFi -->
-    <string name="adb_over_network">ADB 网络</string>
+    <string name="adb_over_network">ADB 调试网络</string>
     <string name="adb_over_network_summary">在网络接口（Wi-Fi、USB网络）上启用TCP/IP调试。重新启动时重置此设置。</string>
     <!-- Warning for Adb over Network -->
     <string name="adb_over_network_warning">警告：当ADB 网络启用时，您的电话是开放的，用于对所有连接网络（包括GSM数据网络）进行入侵！\n\nOnly 网络启用时，您的电话是开放的，用于对所有连接网络（包括GSM数据网络）进行入侵！\n\n只有在信任网络上连接时才使用此功能。\n\n你确定要这样做吗？</string>
@@ -272,5 +272,31 @@
     <string name="battery_image_description">在状态栏显示电量图标</string>
 
     <string name="background_processes_settings_title">后台进程</string>
+	
+	 <!-- Themes -->
+    <string name="system_theme_style_title">系统主题</string>
+    <string name="system_theme_style_auto">取决壁纸</string>
+    <string name="system_theme_style_light">亮色主题</string>
+    <string name="system_theme_style_dark">暗色主题</string>
+    <string name="system_theme_style_black">黑色主题</string>
+    <string name="theme_applied_toast">应用主题！</string>
+    <string name="ui_style_applied_toast">应用UI 样式!</string>
+
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_enabled">成功</string>
+    <string name="sim_disabled">失败</string>
+    <string name="sim_missing">SIM卡丢失或损坏</string>
+    <string name="sim_enabler_need_disable_sim">SIM卡将被停用。您要继续吗？</string>
+    <string name="sim_enabler_will_disable_sim_title">注意！</string>
+    <string name="sim_enabler_need_switch_data_service">此SIM卡将被禁用和 SIM <xliff:g id="slotid">%1$s</xliff:g> 将用于数据服务。您确定要继续吗？</string>
+    <string name="sim_enabler_airplane_on">无法在飞机模式下执行操作。</string>
+    <string name="sim_enabler_in_call">通话时无法执行操作。</string>
+    <string name="sim_enabler_both_inactive">不能禁用所有SIM卡！</string>
+    <string name="sim_enabler_enabling">正在激活\u2026</string>
+    <string name="sim_enabler_disabling">正在停用\u2026</string>
+    <string name="sub_activate_success">SIM卡已激活.</string>
+    <string name="sub_activate_failed">激活失败</string>
+    <string name="sub_deactivate_success">SIM卡已停用</string>
+    <string name="sub_deactivate_failed">停用失败</string>
 
 </resources>
