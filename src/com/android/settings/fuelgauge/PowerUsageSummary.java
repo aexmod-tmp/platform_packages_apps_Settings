@@ -71,7 +71,6 @@ import com.android.settings.display.AmbientDisplayPreferenceController;
 import com.android.settings.display.AutoBrightnessPreferenceController;
 import com.android.settings.display.BatteryPercentagePreferenceController;
 import com.android.settings.display.BatteryChargeAlertPreferenceController;
-import com.android.settings.display.BatteryImagePreferenceController;
 import com.android.settings.display.TimeoutPreferenceController;
 import com.android.settings.fuelgauge.anomaly.Anomaly;
 import com.android.settings.fuelgauge.anomaly.AnomalyDetectionPolicy;
@@ -340,7 +339,6 @@ public class PowerUsageSummary extends PowerUsageBase implements
         controllers.add(new BatterySaverController(context, getLifecycle()));
         controllers.add(new BatteryPercentagePreferenceController(context));
         controllers.add(new BatteryChargeAlertPreferenceController(context));
-        controllers.add(new BatteryImagePreferenceController(context));
         return controllers;
     }
 

@@ -61,11 +61,6 @@
             android:entries="@array/alert_on_charged_entries"
             android:entryValues="@array/alert_on_charged_level_values" />
 
-        <SwitchPreference
-            android:key="battery_image"
-            android:title="@string/battery_image"
-            android:summary="@string/battery_image_description"/>
-
     </PreferenceCategory>
 
     <PreferenceCategory
