@@ -16,12 +16,14 @@
 
 package com.android.settings;
 
+import android.app.Fragment;
 import android.content.Context;
 import android.provider.SearchIndexableResource;
 
 import com.android.internal.hardware.AmbientDisplayConfiguration;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.dashboard.DashboardFragment;
+import com.android.settings.display.AccentPickerPreferenceController;
 import com.android.settings.display.AmbientDisplayPreferenceController;
 import com.android.settings.display.AmbientDisplayCustomPreferenceController;
 import com.android.settings.display.AutoBrightnessPreferenceController;
@@ -82,7 +84,7 @@ public class DisplaySettings extends DashboardFragment {
 
     @Override
     protected List<AbstractPreferenceController> getPreferenceControllers(Context context) {
-        return buildPreferenceControllers(context, getLifecycle());
+        return buildPreferenceControllers(context, getLifecycle(), this);
     }
 
     @Override
@@ -91,9 +93,10 @@ public class DisplaySettings extends DashboardFragment {
     }
 
     private static List<AbstractPreferenceController> buildPreferenceControllers(
-            Context context, Lifecycle lifecycle) {
+            Context context, Lifecycle lifecycle, Fragment fragment) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(new FontPickerPreferenceController(context, lifecycle));
+        controllers.add(new AccentPickerPreferenceController(context, lifecycle, fragment));
         controllers.add(new AutoBrightnessPreferenceController(context, KEY_AUTO_BRIGHTNESS));
         // controllers.add(new AutoRotatePreferenceController(context, lifecycle));
         controllers.add(new CameraGesturePreferenceController(context));
@@ -142,7 +145,7 @@ public class DisplaySettings extends DashboardFragment {
 
                 @Override
                 public List<AbstractPreferenceController> getPreferenceControllers(Context context) {
-                    return buildPreferenceControllers(context, null);
+                    return buildPreferenceControllers(context, null, null);
                 }
             };
 }
