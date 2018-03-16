@@ -12,6 +12,50 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- About AEX.Mod -->
+    <string name="aex_about_info">О нас</string>
+    <string name="aex_about_summary">Наше введение и команда</string>
+    <string name="aex_about_info_summary">AEX.Mod - это прошивка на базе AOSP которая использует стандартный интерфейс и настройки, с множеством дополнительных параметров и темами Substratum. Проект был создан после сбора различных коммитов из других проектов. База AOSP, с нашими изменениями даёт плавность и интерфейс без глюков из коробки. Мы будем постоянно пытаться добавить дополнительные функции и сделать их еще лучше в будущих обновлениях.&#35;BeExtended</string>
+    <string name="dev_info">Об AEX.Mod</string>
+    <string name="github">Github</string>
+    <string name="github_description">Посмотрите наш исходный код</string>
+    <string name="gplus">Google+</string>
+    <string name="gplus_description">Вступите в наше G+ сообщество</string>
+    <string name="telegram">Telegram</string>
+    <string name="telegram_description">Подпишитесь на наш канал в Telegram</string>
+    <string name="web">Центр Загрузок</string>
+    <string name="web_description">Посетите наш центр загрузок</string>
+    <string name="help_translate">﻿Перевод</string>
+    <string name="help_translate_description">Посетите наш Crowdin для перевода на ваш язык</string>
+    <string name="walls">Обои</string>
+    <string name="walls_description">Загрузить обои от разных пользователей</string>
+    <string name="leads">Разработчики</string>
+    <string name="team_1">Shubham Singh &#40;ishubhamsingh&#41;</string>
+    <string name="team1_description">Создатель/Главный разработчик</string>
+    <string name="team_2">Aman Kumar &#40;FireLord&#41;</string>
+    <string name="team2_description">Разработчик</string>
+    <string name="team_3">Amol Amrit</string>
+    <string name="team3_description">Модератор и разработчик-любитель</string>
+    <string name="team_4">Henrique Silva &#40;jhenrique09&#41;</string>
+    <string name="team4_description">Разработчик</string>
+    <string name="designers">Дизайнеры</string>
+    <string name="designer_1">Yasan &#40;AlienCreature7&#41;</string>
+    <string name="designer1_description">Баннеры в темах, логотипы, обои</string>
+    <string name="designer_2">Savio &#40;Wizper99&#41;</string>
+    <string name="designer2_description">Логотипы в панели быстрых настроек и Fling</string>
+    <string name="designer_3">Jesus R &#40;KrapK&#41;</string>
+    <string name="designer3_description">Обои, анимации загрузки</string>
+    <string name="maintainers">Мейнтейнеры</string>
+    <string name="maintainer_description">Разработчик для %1$s</string>
+
+    <!-- Changelog -->
+    <string name="changelog_title">Список изменений</string>
+    <string name="changelog_error">Невозможно загрузить список изменений</string>
+    <string name="changelog_summary">С момента последнего обновления</string>
+
+    <!-- About phone screen, build date -->
+    <string name="build_date">Дата сборки</string>
+    <string name="build_date_default">2015-01-01-0000</string>
 
     <string name="dashboard_conditions_title">Уведомления в главном меню</string>
     <string name="summary_dashboard_conditions_enabled">Уведомления в главном меню включены</string>
@@ -194,4 +238,25 @@
     <string name="sub_activate_failed">Ошибка при активации.</string>
     <string name="sub_deactivate_success">Деактивация выполнена.</string>
     <string name="sub_deactivate_failed">Ошибка при деактивации.</string>
+
+    <!-- Expanded desktop -->
+    <string name="power_menu_expanded_desktop">Расширенный рабочий стол</string>
+    <string name="expanded_hide_nothing">Ничего не скрывать</string>
+    <string name="expanded_hide_status">Скрыть строку состояния</string>
+    <string name="expanded_hide_navigation">Скрыть бар навигации</string>
+    <string name="expanded_hide_both">Скрыть всё</string>
+    <string name="expanded_nothing_to_show">Чтобы добавить пользовательскую конфигурацию для каждого приложения, установите значение "Включено для всех" в положение выкл</string>
+    <string name="expanded_desktop_state">Расширенное состояние</string>
+    <string name="expanded_enabled_for_all">Включено для всех</string>
+    <string name="expanded_user_configurable">Настраиваемый пользователем</string>
+    <string name="expanded_desktop_style">Стиль расширенного рабочего стола</string>
+    <string name="expanded_desktop_style_description">Выберите расширенный стиль рабочего стола по умолчанию</string>
+    <string name="expanded_desktop_title">Опции расширенного рабочего стола</string>
+
+    <!-- Android debugging over WiFi -->
+    <string name="adb_over_network">ADB по сети</string>
+    <string name="adb_over_network_summary">Включить отладку TCP/IP через сетевые интерфейсы (Wi-Fi, USB сети). Этот параметр сбрасывается при перезагрузке</string>
+
+    <!-- Clang version -->
+    <string name="clang_version">Версия Clang</string>
 </resources>
