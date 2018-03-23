@@ -51,6 +51,8 @@
     <string name="leads">Team Leads</string>
     <string name="team_0">DennySPb</string>
     <string name="team0_description">Mod Developer</string>
+    <string name="team_01">Alexey Derendyaev</string>
+    <string name="team01_description">Mod Co-developer</string>
     <string name="team_1">Shubham Singh &#40;ishubhamsingh&#41;</string>
     <string name="team1_description">Owner/Lead Developer</string>
     <string name="team_2">Aman Kumar &#40;FireLord&#41;</string>

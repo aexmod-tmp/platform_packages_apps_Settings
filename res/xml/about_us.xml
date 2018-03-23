@@ -95,6 +95,16 @@ xmlns:android="http://schemas.android.com/apk/res/android"
                android:data="http://4pda.ru/forum/index.php?showuser=751846" />
         </PreferenceScreen>
 
+        <PreferenceScreen
+            android:title="@string/team_01"
+    android:summary="@string/team01_description"
+    android:icon="@drawable/ic_devs" >
+    <intent
+               android:action="android.intent.action.VIEW"
+               android:data="https://telegram.me/alexxxdev" />
+        </PreferenceScreen>
+
+
         <Preference
             android:title="@string/team_1"
     android:summary="@string/team1_description"
