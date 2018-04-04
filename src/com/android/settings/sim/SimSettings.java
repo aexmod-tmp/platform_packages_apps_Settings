@@ -37,6 +37,7 @@ import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
+import android.support.v7.preference.PreferenceGroup;
 import android.support.v7.preference.PreferenceManager;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.PreferenceViewHolder;
@@ -97,7 +98,7 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
     private List<SubscriptionInfo> mAvailableSubInfos = null;
     private List<SubscriptionInfo> mSubInfoList = null;
     private List<SubscriptionInfo> mSelectableSubInfos = null;
-    private PreferenceCategory mSimCards = null;
+    private PreferenceGroup mSimCards = null;
     private SubscriptionManager mSubscriptionManager;
     private int mNumSlots;
     private Context mContext;
@@ -138,7 +139,7 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
         addPreferencesFromResource(R.xml.sim_settings);
 
         mNumSlots = tm.getSimCount();
-        mSimCards = (PreferenceCategory)findPreference(SIM_CARD_CATEGORY);
+        mSimCards = (PreferenceGroup)findPreference(SIM_CARD_CATEGORY);
         mAvailableSubInfos = new ArrayList<SubscriptionInfo>(mNumSlots);
         mSelectableSubInfos = new ArrayList<SubscriptionInfo>();
         SimSelectNotification.cancelNotification(getActivity());
@@ -363,12 +364,7 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
         Context mContext;
 
         public SimPreference(Context context, SubscriptionInfo subInfoRecord, int slotId) {
-            this(context, null, 0, subInfoRecord, slotId);
-        }
-
-        public SimPreference(Context context, AttributeSet attrs, int defStyle,
-                SubscriptionInfo subInfoRecord, int slotId) {
-            super(context, attrs, defStyle);
+            super(context);
             mContext = context;
             mSubInfoRecord = subInfoRecord;
             mSlotId = slotId;
@@ -379,9 +375,14 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
         public void update() {
             final Resources res = mContext.getResources();
 
-            setTitle(res.getString(R.string.sim_editor_title, (mSlotId + 1)));
-            if (isValid()) {
-                if (!TextUtils.isEmpty(getPhoneNumber(mSubInfoRecord))) {
+            setTitle(String.format(mContext.getResources()
+                    .getString(R.string.sim_editor_title), (mSlotId + 1)));
+            if (mSubInfoRecord != null) {
+                if (TextUtils.isEmpty(getPhoneNumber(mSubInfoRecord))) {
+                    setSummary(mSubInfoRecord.getDisplayName());
+                } else {
+                    setSummary(mSubInfoRecord.getDisplayName() + " - " +
+                            PhoneNumberUtils.createTtsSpannable(getPhoneNumber(mSubInfoRecord)));
                     setEnabled(true);
                 }
                 setSummary(determineSummary());
@@ -434,7 +435,7 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
         private static final int MSG_DELAY_TIME = 2000;
 
         public SimEnablerPreference(Context context, SubscriptionInfo sir, int slotId) {
-            super(context, null, com.android.internal.R.attr.checkBoxPreferenceStyle, sir, slotId);
+            super(context, sir, slotId);
             setWidgetLayoutResource(R.layout.custom_sim_switch);
         }
 
@@ -607,7 +608,6 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
             if (!mIsChecked) {
                 if (getNumOfSubsProvisioned() > 1) {
                     logd("More than one sub is active, Deactivation possible.");
-                    //showAlertDialog(CONFIRM_ALERT_DLG_ID, 0);
                     sendUiccProvisioningRequest();
                 } else {
                     logd("Only one sub is active. Deactivation not possible.");
@@ -704,7 +704,7 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
                 case ERROR_ALERT_DLG_ID:
                     builder.setMessage(mContext.getString(msgId));
                     builder.setNeutralButton(android.R.string.ok, mDialogClickListener);
-                    builder.setCancelable(false);
+                    builder.setOnCancelListener(mDialogCanceListener);
                     break;
 
                 case RESULT_ALERT_DLG_ID:
