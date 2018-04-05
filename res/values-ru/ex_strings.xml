@@ -137,9 +137,10 @@
     <!-- Themes -->
     <string name="system_theme_style_title">Стиль оформления</string>
     <string name="system_theme_style_auto">Авто (по обоям)</string>
-    <string name="system_theme_style_light">Светлый</string>
-    <string name="system_theme_style_dark">Тёмный</string>
-    <string name="system_theme_style_black">Чёрный</string>
+    <string name="system_theme_style_light">Светлый стиль</string>
+    <string name="system_theme_style_dark">Тёмный стиль</string>
+    <string name="system_theme_style_black">Чёрный стиль</string>
+    <string name="system_theme_style_extended">Extended стиль</string>
     <string name="theme_applied_toast">Тема применена!</string>
     <string name="ui_style_applied_toast">Стиль применён!</string>
 
