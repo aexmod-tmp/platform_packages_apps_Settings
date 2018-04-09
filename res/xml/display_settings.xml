@@ -155,11 +155,6 @@
             android:title="@string/font_picker_title"
             android:persistent="false" />
 
-    <ListPreference
-        android:key="theme"
-        android:title="@string/device_theme"
-        android:summary="@string/summary_placeholder" />
-
     <Preference
         android:key="accent_picker"
         android:title="@string/theme_accent_picker_title" />
