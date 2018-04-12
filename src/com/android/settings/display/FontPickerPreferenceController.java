@@ -61,7 +61,7 @@ public class FontPickerPreferenceController extends AbstractPreferenceController
     }
 
     @Override
-    public void onResume() {
+    public void onResume() {        
     }
 
     @Override
@@ -72,6 +72,11 @@ public class FontPickerPreferenceController extends AbstractPreferenceController
     @Override
     public String getPreferenceKey() {
         return KEY_FONT_PICKER_FRAGMENT_PREF;
+    }
+
+    @Override
+    public void updateState(Preference preference) {
+        preference.setSummary(getCurrentFontInfo().fontName.replace("_", " "));
     }
 
     private FontInfo getCurrentFontInfo() {

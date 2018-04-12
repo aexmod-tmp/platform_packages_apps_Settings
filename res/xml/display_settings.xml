@@ -74,6 +74,11 @@
         android:title="@string/power_menu_expanded_desktop"
         android:fragment="com.android.settings.applications.ExpandedDesktopPreferenceFragment" />
 
+    <com.android.settings.display.FontDialogPreference
+        android:key="custom_font"
+        android:title="@string/font_picker_title"
+        android:persistent="false" />
+            
     <Preference
         android:key="font_size_preference_screen"
         android:title="@string/title_font_size"
@@ -89,8 +94,6 @@
         android:key="screensaver"
         android:title="@string/screensaver_settings_title"
         android:fragment="com.android.settings.dream.DreamSettings" />
-
-
 
     <Preference
         android:key="ambient_display"
@@ -135,7 +138,6 @@
         android:fragment="com.android.settings.display.VrDisplayPreferencePicker" />
 
 
-
     <org.aospextended.extensions.preference.SystemSettingSwitchPreference
         android:key="enable_conditions"
         android:title="@string/dashboard_conditions_title"
@@ -149,11 +151,6 @@
         android:summaryOn="@string/summary_dashboard_suggestions_enabled"
         android:summaryOff="@string/summary_dashboard_suggestions_disabled"
         android:defaultValue="true" />
-
-        <com.android.settings.display.FontDialogPreference
-            android:key="custom_font"
-            android:title="@string/font_picker_title"
-            android:persistent="false" />
 
     <Preference
         android:key="accent_picker"

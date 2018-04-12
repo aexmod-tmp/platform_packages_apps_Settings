@@ -55,6 +55,7 @@ public class FontDialogPreference extends CustomDialogPreference {
                 FontInfo info = adapter.getItem(which);
                 try {
                     mFontService.applyFont(info);
+                    setSummary(info.fontName.replace("_", " "));
                 } catch (RemoteException e) {
                 }
             }
