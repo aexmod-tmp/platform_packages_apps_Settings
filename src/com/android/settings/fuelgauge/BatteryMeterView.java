@@ -65,8 +65,6 @@ public class BatteryMeterView extends ImageView {
         }
         mDrawable = new BatteryMeterDrawable(context, frameColor, userStyle);
         mDrawable.setBatteryColorFilter(mAccentColorFilter);
-        mDrawable.setWarningColorFilter(
-                new PorterDuffColorFilter(Color.WHITE, PorterDuff.Mode.SRC_IN));
         setImageDrawable(mDrawable);
     }
 
@@ -133,14 +131,11 @@ public class BatteryMeterView extends ImageView {
             return mIntrinsicHeight;
         }
 
-        public void setWarningColorFilter(@Nullable ColorFilter colorFilter) {
-            mWarningTextPaint.setColorFilter(colorFilter);
-        }
-
         public void setBatteryColorFilter(@Nullable ColorFilter colorFilter) {
             mFramePaint.setColorFilter(colorFilter);
             mBatteryPaint.setColorFilter(colorFilter);
             mBoltPaint.setColorFilter(colorFilter);
+            mWarningTextPaint.setColorFilter(colorFilter);
         }
     }
 
