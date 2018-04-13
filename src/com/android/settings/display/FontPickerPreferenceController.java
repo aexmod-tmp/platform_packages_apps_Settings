@@ -51,7 +51,7 @@ public class FontPickerPreferenceController extends AbstractPreferenceController
     private FontDialogPreference mFontPreference;
     private IFontService mFontService;
 
-    public FontPickerPreferenceController(Context context, Lifecycle lifecycle) {
+    public FontPickerPreferenceController(Context context, Lifecycle lifecycle, Fragment parent) {
         super(context);
         if (lifecycle != null) {
             lifecycle.addObserver(this);
@@ -85,6 +85,11 @@ public class FontPickerPreferenceController extends AbstractPreferenceController
         } catch (RemoteException e) {
             return FontInfo.getDefaultFontInfo();
         }
+    }
+
+    public void stopProgress() {
+	if (mFontPreference != null)
+    	    mFontPreference.stopProgress();
     }
 
     private boolean isPackageInstalled(String package_name, Context context) {
