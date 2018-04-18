@@ -344,6 +344,7 @@ public class PowerUsageSummary extends PowerUsageBase implements
         controllers.add(new BatterySaverController(context, getLifecycle()));
         controllers.add(new BatteryPercentagePreferenceController(context));
         controllers.add(new BatteryChargeAlertPreferenceController(context));
+        controllers.add(new SmartPixelsPreferenceController(context));
         return controllers;
     }
 
