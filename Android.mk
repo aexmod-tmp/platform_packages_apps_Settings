@@ -21,6 +21,7 @@ LOCAL_SRC_FILES := $(call all-java-files-under, src) \
                    $(call all-java-files-under, ../Extensions/src)
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
+    frameworks/support/design/res \
     frameworks/support/v7/preference/res \
     frameworks/support/v14/preference/res \
     frameworks/support/v7/appcompat/res \
@@ -28,6 +29,7 @@ LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     packages/apps/Extensions/res
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
+    android-support-design \
     android-support-v4 \
     android-support-v13 \
     android-support-v7-appcompat \
@@ -48,9 +50,13 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     jsr305 \
     settings-logtags
 
+LOCAL_PROGUARD_FLAG_FILES := ../../../frameworks/support/design/proguard-rules.pro
+LOCAL_PROGUARD_FLAG_FILES += ../../../frameworks/support/v7/preference/proguard-rules.pro
+LOCAL_PROGUARD_FLAG_FILES += ../../../frameworks/support/v7/recyclerview/proguard-rules.pro
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 LOCAL_AAPT_FLAGS := --auto-add-overlay \
+    --extra-packages android.support.design \
     --extra-packages android.support.v7.preference \
     --extra-packages android.support.v14.preference \
     --extra-packages android.support.v17.preference \
