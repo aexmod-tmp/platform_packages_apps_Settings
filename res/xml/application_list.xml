@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright (C) 2017 Flash ROM
+<!-- Copyright (C) 2008 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,9 +14,16 @@
      limitations under the License.
 -->
 
-<resources>
-    <style name="Theme.SmartBar.Dialog" parent="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert" />
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <style name="TabAppTheme" parent="Theme.AppCompat">
-    </style>
-</resources>
+    <PreferenceCategory
+        android:key="general_section"
+        android:title="@string/sp_profile_appgroup_name_title">
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="applications_list"
+        android:title="@string/sp_profile_applist_title" >
+    </PreferenceCategory>
+
+</PreferenceScreen>

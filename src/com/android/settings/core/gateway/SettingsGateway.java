@@ -40,6 +40,7 @@ import com.android.settings.accounts.AccountSyncSettings;
 import com.android.settings.accounts.ChooseAccountActivity;
 import com.android.settings.accounts.ManagedProfileSettings;
 import com.android.settings.accounts.UserAndAccountDashboardFragment;
+import com.android.settings.aospextended.profiles.ProfilesSettingsFragment;
 import com.android.settings.applications.DefaultAppSettings;
 import com.android.settings.applications.AppAndNotificationDashboardFragment;
 import com.android.settings.applications.DrawOverlayDetails;
@@ -266,6 +267,7 @@ public class SettingsGateway {
             HeadsUpSettings.class.getName(),
             NavbarSettings.class.getName(),
             RunningServices.class.getName(),
+            ProfilesSettingsFragment.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
