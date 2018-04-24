@@ -18,6 +18,7 @@
 <resources>
     <style name="Theme.SmartBar.Dialog" parent="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert" />
 
-    <style name="TabAppTheme" parent="Theme.AppCompat">
-    </style>
+    <style name="TabAppThemeBase" parent="Theme.AppCompat.Light.DarkActionBar"/>
+    <style name="TabAppThemeBaseDark" parent="Theme.AppCompat"/>
+
 </resources>

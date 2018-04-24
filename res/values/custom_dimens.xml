@@ -16,4 +16,6 @@
 -->
 <resources>
     <dimen name="fab_line_width">2dp</dimen>
+
+    <bool name="theme_dark">false</bool>
 </resources>
