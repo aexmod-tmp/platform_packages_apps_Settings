@@ -109,7 +109,12 @@ public class SetupTriggersFragment extends SettingsPreferenceFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        final Context contextThemeWrapper = new ContextThemeWrapper(getActivity(), R.style.TabAppTheme);
+        boolean aBoolean = getResources().getBoolean(R.bool.theme_dark);
+        Context contextThemeWrapper;
+        if(aBoolean)
+            contextThemeWrapper = new ContextThemeWrapper(getActivity(), R.style.TabAppThemeBaseDark);
+        else
+            contextThemeWrapper = new ContextThemeWrapper(getActivity(), R.style.TabAppThemeBase);
         LayoutInflater localInflater = inflater.cloneInContext(contextThemeWrapper);
 
         View root = localInflater.inflate(R.layout.fragment_setup_triggers, container, false);
