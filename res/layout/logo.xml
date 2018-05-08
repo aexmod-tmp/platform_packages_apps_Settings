@@ -19,8 +19,9 @@
 
 <ImageView
 	android:layout_width="match_parent"
- 	android:layout_height="match_parent"
-	android:src="@drawable/ic_ext_logo"
+	android:layout_height="match_parent"
+	android:src="@drawable/logo_may"
 	android:adjustViewBounds="true"
 	android:scaleType="centerInside" />
+
 </LinearLayout>
