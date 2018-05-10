@@ -268,8 +268,8 @@ public class SettingsGateway {
             HeadsUpSettings.class.getName(),
             NavbarSettings.class.getName(),
             RunningServices.class.getName(),
-            ProfilesSettingsFragment.class.getName()
-            SmartPixels.class.getName(),
+            ProfilesSettingsFragment.class.getName(),
+            SmartPixels.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
