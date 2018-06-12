@@ -44,7 +44,8 @@ LOCAL_JAVA_LIBRARIES := \
     telephony-common \
     ims-common \
     telephony-ext \
-    org.dirtyunicorns.utils
+    org.dirtyunicorns.utils \
+    com.github.aexmod
 
 LOCAL_STATIC_JAVA_LIBRARIES := \
     jsr305 \

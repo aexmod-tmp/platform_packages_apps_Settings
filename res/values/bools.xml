@@ -51,4 +51,8 @@
 
     <!-- Whether notify user that switch data service -->
     <bool name="confirm_to_switch_data_service">false</bool>
+
+    <bool name="config_defaultAutoOutdoorMode">true</bool>
+    <bool name="config_defaultCABC">true</bool>
+    <bool name="config_defaultColorEnhancement">true</bool>
 </resources>
